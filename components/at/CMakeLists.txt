@@ -24,7 +24,7 @@ idf_component_register (
     SRCS ${srcs}
     INCLUDE_DIRS include
     PRIV_INCLUDE_DIRS private_include
-    REQUIRES ${require_components}
+    REQUIRES ${require_components} 
     EMBED_TXTFILES ${embed_txt_files})
 
 if (${SILENCE} EQUAL 1)

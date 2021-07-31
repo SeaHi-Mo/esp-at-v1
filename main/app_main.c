@@ -44,6 +44,7 @@
 
 #include "esp_at.h"
 #include "at_interface.h"
+#include "user_at_commands.h"
 
 #ifndef CONFIG_AT_SOCKET_MAX_CONN_NUM
 #define CONFIG_AT_SOCKET_MAX_CONN_NUM       1
@@ -305,4 +306,5 @@ void app_main()
 #endif
 
     at_custom_init();
+    user_at_cmd_init();
 }
